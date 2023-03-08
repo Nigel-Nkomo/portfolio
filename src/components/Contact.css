@@ -5,7 +5,7 @@
   border-top: 1px solid var(--light-grey);
 }
 
-.contact__text {
+.contact__content {
   display: flex;
   justify-content: space-between;
 }
