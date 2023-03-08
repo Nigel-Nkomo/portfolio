@@ -16,9 +16,9 @@ export default function Contact() {
   return (
     <>
       <section className="contact">
-        <div className="contact-text">
-          <h1 className="contact-heading">Get in Touch</h1>
-          <div className="text">
+        <div className="contact__text">
+          <h1 className="contact__heading">Get in Touch</h1>
+          <div className="contact__text">
             <p>
               I’d love to hear about what you’re working on and how I could
               help. I’m currently looking for a new role and am open to a wide
@@ -30,25 +30,26 @@ export default function Contact() {
               check out my online profiles below and get in touch using the
               form.
             </p>
-            <div className="social-media-links">
-              <a className="contact-link">
+            <div className="social-media">
+              <a className="contact__link">
                 <GitHubIcon />
               </a>
-              <a className="contact-link">
+              <a className="contact__link">
                 <LinkedInIcon />
               </a>
-              <a className="contact-link">
+              <a className="contact__link">
                 <EmailIcon />
               </a>
             </div>
           </div>
         </div>
         <div className="form-box">
-          <h1 className="contact-heading">Contact Me</h1>
-          <form method="post" onSubmit={handleSubmit}>
-            <label htmlFor="name">
+          <h1 className="contact__heading">Contact Me</h1>
+          <form className="form" method="post" onSubmit={handleSubmit}>
+            <label className="form__label" htmlFor="name">
               Name
               <input
+                className="form__input"
                 type="text"
                 id="name"
                 placeholder="Michael Burnham"
@@ -56,9 +57,10 @@ export default function Contact() {
               />
             </label>
 
-            <label htmlFor="email">
+            <label htmlFor="email" className="form__label">
               Email
               <input
+                className="form__input"
                 type="text"
                 id="email"
                 placeholder="email@example.com"
@@ -66,9 +68,10 @@ export default function Contact() {
               />
             </label>
 
-            <label htmlFor="message">
+            <label htmlFor="message" className="form__label">
               Message
               <textarea
+                className="form__message"
                 id="message"
                 rows="8"
                 placeholder="How can I help?"
@@ -76,7 +79,7 @@ export default function Contact() {
               ></textarea>
             </label>
 
-            <button type="submit" className="btn form-btn">
+            <button type="submit" className="btn form__btn">
               Send message
             </button>
           </form>

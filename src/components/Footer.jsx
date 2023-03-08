@@ -6,27 +6,27 @@ import EmailIcon from "@mui/icons-material/Email";
 export default function Footer() {
   return (
     <>
-      <footer>
-        <div className="footer-content">
-          <div className="footer-links">
-            <Link to="home/" alt="home-page" className="footer-link">
+      <footer className="footer">
+        <div className="footer__content">
+          <div className="footer__links">
+            <Link to="home/" alt="home-page" className="footer__link">
               Home
             </Link>
-            <Link to="portfolio/" alt="portfolio-page" className="footer-link">
+            <Link to="portfolio/" alt="portfolio-page" className="footer__link">
               Portfolio
             </Link>
-            <Link to="contact/" alt="contact-page" className="footer-link">
+            <Link to="contact/" alt="contact-page" className="footer__link">
               Contact me
             </Link>
           </div>
-          <div className="social-media-links">
-            <a className="social-media-link">
+          <div className="social-media">
+            <a className="social-media__link">
               <GitHubIcon />
             </a>
-            <a className="social-media-link">
+            <a className="social-media__link">
               <LinkedInIcon />
             </a>
-            <a className="social-media-link">
+            <a className="social-media__link">
               <EmailIcon />
             </a>
           </div>

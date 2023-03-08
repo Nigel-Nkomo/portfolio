@@ -28,14 +28,14 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="navigation">
-        <h1 className="logo">nigel</h1>
+      <nav className="nav">
+        <h1 className="nav__logo">nigel</h1>
 
-        <div ref={ref} className={`default ${open ? "nav-links" : ""}`}>
+        <div ref={ref} className={`nav__default ${open ? "nav__links" : ""}`}>
           <NavLink
             to="/home"
             alt="home-page"
-            className="nav-link"
+            className="nav__link"
             onClick={() => setOpen(false)}
           >
             Home
@@ -43,7 +43,7 @@ export default function Nav() {
           <NavLink
             to="portfolio"
             alt="portfolio-page"
-            className="nav-link"
+            className="nav__link"
             onClick={() => setOpen(false)}
           >
             Portfolio
@@ -51,13 +51,13 @@ export default function Nav() {
           <NavLink
             to="contact"
             alt="contact-page"
-            className="nav-link"
+            className="nav__link"
             onClick={() => setOpen(false)}
           >
             Contact me
           </NavLink>
         </div>
-        <button className="toggle-btn" onClick={() => setOpen((prev) => !prev)}>
+        <button className="nav__btn" onClick={() => setOpen((prev) => !prev)}>
           {open ? <CloseIcon /> : <MenuIcon />}
         </button>
       </nav>
