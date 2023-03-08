@@ -1,3 +1,11 @@
+import "./Portfolio.css";
+
 export default function Portfolio() {
-  return <h1 className="hero-heading">Portfolio</h1>;
+  return (
+    <div className="portfolio">
+      <h1 className="hero-heading">
+        Stay tuned. Projects are going to be launched soon.{" "}
+      </h1>
+    </div>
+  );
 }

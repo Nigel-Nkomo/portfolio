@@ -1,0 +1,107 @@
+/* CONTACT */
+.contact {
+  margin: 2.5rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--light-grey);
+}
+
+.contact-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-heading {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.7rem;
+  margin-bottom: 1.5rem;
+  width: 50%;
+}
+
+.text {
+  width: 50%;
+  font-size: 1.3rem;
+}
+
+.contact-link {
+  color: var(--greyish-dark-blue);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.form-box {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--light-grey);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form-btn {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  border: none;
+}
+
+input {
+  margin-bottom: 1.5rem;
+  height: 3rem;
+  border: none;
+  background-color: var(--light-grey);
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+textarea {
+  border: none;
+  background-color: var(--light-grey);
+  font-family: "Public Sans", sans-serif;
+  padding-top: 1rem;
+  resize: none;
+}
+
+input,
+textarea {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .contact-text {
+    flex-direction: column;
+  }
+
+  .form-box {
+    flex-direction: column;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .contact-heading {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    margin-top: 0.5rem;
+  }
+}

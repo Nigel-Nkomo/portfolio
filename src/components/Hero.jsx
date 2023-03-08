@@ -3,17 +3,17 @@ import SVG from "./SVG";
 export default function Hero() {
   return (
     <>
-      <div className="hero-image">
-        <div className="hero-content">
-          <h1 className="hero-heading">
+      <section className="hero__image">
+        <div className="hero__content">
+          <h1 className="hero__heading">
             Hello. My name's Nigel and I love building websites
           </h1>
-          <a className="btn" href="#about-section">
+          <a className="hero__button" href="#about">
             <SVG />
-            <span>About me</span>
+            <span className="hero__text">About me</span>
           </a>
         </div>
-      </div>
+      </section>
     </>
   );
 }
